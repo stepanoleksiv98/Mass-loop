@@ -1,0 +1,77 @@
+@use '../abstracts' as *;
+
+////////////////////////////////
+//////// HEADER BUTTONS ////////
+////////////////////////////////
+
+.btn {
+	cursor: pointer;
+	background: none;
+	text-decoration: none;
+
+	&--cta {
+		color: inherit;
+		height: 100%;
+		padding: 1.8rem 6.4rem;
+		background-color: $clr-primary;
+		font-weight: 900;
+		border-radius: 50px;
+		box-shadow: 0 1rem 3rem 1rem rgba(0, 0, 0, 0.08);
+	}
+
+	&--hero {
+		padding: 2rem;
+		border-radius: 50%;
+		background-color: $clr-primary;
+	}
+}
+
+.mobile {
+	&__style {
+		font-size: 1.6rem;
+		display: block;
+		height: 2px;
+		width: 2.6em;
+		background-color: $clr-black;
+		position: relative;
+
+		&::before,
+		&::after {
+			transition: transform 0.2s;
+			background-color: $clr-black;
+			position: absolute;
+			display: block;
+			left: 0;
+			content: '';
+			height: 2px;
+			width: 2.6em;
+		}
+
+		&::after {
+			transform-origin: right top;
+			top: 0.9em;
+		}
+
+		&::before {
+			transform-origin: right bottom;
+			top: -0.9em;
+		}
+
+		&--open {
+			visibility: hidden;
+
+			&::before,
+			&::after {
+				visibility: visible;
+			}
+
+			&::before {
+				transform: rotate(-45deg) translate(-5%, -50%);
+			}
+
+			&::after {
+				transform: rotate(45deg) translateY(50%);
+			}
+		}
+	}
+}

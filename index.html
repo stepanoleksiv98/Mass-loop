@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="uk">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+		<link rel="preconnect" href="https://fonts.googleapis.com" />
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+		<link
+			href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;800;900&display=swap"
+			rel="stylesheet"
+		/>
+
+		<link rel="stylesheet" href="css/style.css" />
+		<script defer src="js/script.js"></script>
+		<title>Mass-loop</title>
+	</head>
+	<body>
+		<header class="header">
+			<nav class="nav">
+				<div class="nav__logo">
+					<a href="index.html" class="logo"><img src="/img/logo/logo.svg" alt="Company logo" /></a>
+				</div>
+				<ul class="nav__menu">
+					<li class="nav__item">
+						<a href="#" class="nav__link">Policz zyski</a>
+					</li>
+					<li class="nav__item">
+						<a href="#" class="nav__link">O produkcie</a>
+					</li>
+					<li class="nav__item">
+						<a href="#" class="nav__link">Kontakt</a>
+					</li>
+					<li class="nav__item">
+						<a href="#" class="nav__link">FAQ</a>
+					</li>
+				</ul>
+				<div class="nav__cta">
+					<ul class="lang__list">
+						<li class="lang__item">
+							<a class="lang__link lang__link--active" href="#">PL</a>
+						</li>
+						<li class="lang__item">
+							<a class="lang__link" href="#">EN</a>
+						</li>
+						<li class="lang__item">
+							<a class="lang__link" href="#">DE</a>
+						</li>
+						<li class="lang__item">
+							<a class="lang__link" href="#">GB</a>
+						</li>
+					</ul>
+					<button class="btn btn--cta">KUP</button>
+				</div>
+			</nav>
+			<nav class="nav__mobile">
+				<div class="nav__main">
+					<div class="nav__logo">
+						<a class="logo"><img src="/img/logo/logo.svg" alt="Company logo" /></a>
+					</div>
+					<div class="nav__cta">
+						<ul class="lang__list">
+							<li class="lang__item">
+								<a class="lang__link lang__link--active" href="#">PL</a>
+							</li>
+							<li class="lang__item">
+								<a class="lang__link" href="#">EN</a>
+							</li>
+							<li class="lang__item">
+								<a class="lang__link" href="#">DE</a>
+							</li>
+							<li class="lang__item">
+								<a class="lang__link" href="#">GB</a>
+							</li>
+						</ul>
+						<button class="btn btn--mobile">
+							<span class="mobile__style"></span>
+						</button>
+					</div>
+				</div>
+				<ul class="nav__menu">
+					<li class="nav__item">
+						<a href="#" class="nav__link">Policz zyski</a>
+					</li>
+					<li class="nav__item">
+						<a href="#" class="nav__link">O produkcie</a>
+					</li>
+					<li class="nav__item">
+						<a href="#" class="nav__link">Kontakt</a>
+					</li>
+					<li class="nav__item">
+						<a href="#" class="nav__link">FAQ</a>
+					</li>
+					<li class="nav__item">
+						<a href="#" class="btn btn--cta">KUP</a>
+					</li>
+				</ul>
+			</nav>
+		</header>
+		<main class="main">
+			<section class="hero padding-top">
+				<h1 class="heading-primary hero__heading">
+					Inteligentna kruszarka, która zamienia szkło w piasek.
+				</h1>
+				<button class="hero__btn btn btn--hero">
+					<img class="hero__icon" src="/img/icons/shopping-bag.svg" alt="Buy product button" />
+				</button>
+			</section>
+			<section class="features">
+				<div class="features__text">
+					<h2 class="heading-secondary features__heading">
+						Płać 5 razy mniej za wywóz odpadów szklanych.
+					</h2>
+					<p class="features__paragraph">
+						Kruszarka zmniejsza gabaryty szklanych śmieci, a Ty płacisz PIĘ-CIO-KROT-NIE niższe
+						rachunki za ich wywóz.
+					</p>
+				</div>
+			</section>
+			<section class="calc padding-top">
+				<div class="calc__container">
+					<h2 class="heading-secondary calc__heading">Ile zaoszczędzisz?</h2>
+					<p class="calc__paragraph">Rachunek jest prosty.</p>
+					<div class="calc__summary">
+						<div class="calc__box">
+							<h3 class="calc__subheading heading-tertiary">
+								Ile pojemników na szkło zapełniasz miesięcznie?
+							</h3>
+							<input class="calc__input calc__input--bins" type="number" placeholder="5" required />
+						</div>
+						<div class="calc__box">
+							<h3 class="calc__subheading heading-tertiary">
+								Ile płacisz za wywóz jednego pojemnika na szkło?
+							</h3>
+							<input
+								class="calc__input calc__input--payment"
+								type="number"
+								placeholder="20 zł"
+								required
+							/>
+						</div>
+						<div class="calc__result">
+							<span
+								>Dzięki kruszarce zaoszczędzisz <span class="calc__output">960.00 zł</span> rocznie.
+							</span>
+						</div>
+					</div>
+					<p class="calc__paragraph">To na co wydasz zaoszczędzoną gotówkę?</p>
+					<button class="btn btn--cta calc__cta">KUP <span>8499 zł</span></button>
+				</div>
+			</section>
+		</main>
+		<footer class="footer">
+			<span class="footer__text">Brzmi dobrze? Uważaj. Dopiero się rozkręcamy!</span>
+		</footer>
+	</body>
+</html>

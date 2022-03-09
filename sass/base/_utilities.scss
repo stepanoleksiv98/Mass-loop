@@ -1,0 +1,40 @@
+@use '../abstracts' as *;
+
+////////////////////////////
+////////// RESETS //////////
+////////////////////////////
+
+.btn {
+	border: none;
+	text-decoration: none;
+	font-family: inherit;
+	cursor: pointer;
+	background: none;
+}
+
+//////////////////////////////////////
+////////// REUSABLE CLASSES //////////
+//////////////////////////////////////
+
+.main {
+	padding-top: 9rem;
+}
+
+.stop-scroll {
+	overflow-y: hidden;
+	height: 100%;
+}
+
+.container {
+	margin: 0 auto;
+	max-width: 144rem;
+	padding: 0 1.2rem;
+}
+
+.padding-bot {
+	padding-bottom: 6.4rem;
+}
+
+.padding-top {
+	padding-top: 2rem;
+}

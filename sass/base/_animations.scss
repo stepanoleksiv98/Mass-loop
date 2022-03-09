@@ -1,0 +1,71 @@
+@use '../abstracts' as *;
+
+//////////////////////////////
+///////// TRANSITIONS /////////
+//////////////////////////////
+
+.btn {
+	transition: all 0.3s;
+	&--cta:active {
+		box-shadow: 0 0.8rem 2rem 0.4rem rgba(0, 0, 0, 0.13);
+		transform: translateY(3px);
+	}
+}
+
+.calc {
+	&__input {
+		transition: all 0.3s;
+		&:placeholder-shown {
+			border: 1px solid $clr-black;
+		}
+		&:focus {
+			transform: translateY(-5px);
+			border: 1px solid $clr-primary;
+			box-shadow: 0 1rem 4rem 0.4rem rgba(0, 0, 0, 0.1);
+		}
+	}
+}
+
+.nav {
+	&__item {
+		&::before {
+			transform: scaleX(0);
+			transform-origin: right;
+			transition: transform 250ms ease-out;
+		}
+	}
+	&__item:hover,
+	&__item:active {
+		&::before {
+			transform: scaleX(1);
+			transform-origin: left;
+		}
+	}
+}
+
+//////////////////////////////
+///////// ANIMATIONS /////////
+//////////////////////////////
+
+@keyframes fade-from-top {
+	0% {
+		opacity: 0;
+		transform: translateY(-10rem);
+	}
+
+	100% {
+		opacity: 1;
+		transform: translateY(0rem);
+	}
+}
+
+@keyframes fade-in-hero-img {
+	0% {
+		background-position-y: 90rem;
+		background-size: 0rem;
+	}
+	100% {
+		background-position-y: 30rem;
+		background-size: 50rem;
+	}
+}

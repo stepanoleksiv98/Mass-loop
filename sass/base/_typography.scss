@@ -1,0 +1,21 @@
+@use '../abstracts' as *;
+
+//////////////////////////////////////
+////////// REUSABLE HEADINGS /////////
+//////////////////////////////////////
+
+.heading {
+	&-primary,
+	&-secondary {
+		color: $clr-black;
+		font-weight: 900;
+		line-height: 1.1;
+	}
+
+	&-primary {
+		font-size: 5.2rem;
+	}
+	&-secondary {
+		font-size: 4.4rem;
+	}
+}
