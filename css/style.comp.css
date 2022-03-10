@@ -132,6 +132,9 @@ body {
   border-radius: 50%;
   background-color: #ffb001;
 }
+.btn--mobile {
+  height: 4rem;
+}
 
 .mobile__style {
   font-size: 1.6rem;
