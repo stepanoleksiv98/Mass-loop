@@ -26,12 +26,14 @@
 	}
 
 	&--mobile {
+		outline: none;
 		height: 4rem;
 	}
 }
 
 .mobile {
 	&__style {
+		outline: none;
 		font-size: 1.6rem;
 		display: block;
 		height: 2px;

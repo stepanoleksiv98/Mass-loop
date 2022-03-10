@@ -133,10 +133,12 @@ body {
   background-color: #ffb001;
 }
 .btn--mobile {
+  outline: none;
   height: 4rem;
 }
 
 .mobile__style {
+  outline: none;
   font-size: 1.6rem;
   display: block;
   height: 2px;
