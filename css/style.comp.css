@@ -245,7 +245,7 @@ body {
   display: none;
 }
 .nav__mobile .nav__cta .lang__list {
-  top: -1em;
+  top: 0.3em;
 }
 
 .header--open {
